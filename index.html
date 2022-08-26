@@ -15,22 +15,32 @@
         <form method="GET">
           <div class="container-input">
             <label for="name">Nome</label>
-
-            <input id="name" type="name" name="name" required />
+            <input id="name" type="text" name="name" />
           </div>
           <div class="container-input">
             <label for="email">E-mail</label>
-
-            <input id="email" type="email" name="email" required />
+            <input
+              class="required"
+              data-error-required="Preencha o campo da senha"
+              id="email"
+              type="email"
+              name="email"
+            />
           </div>
 
           <div class="container-input">
             <label for="password">Senha</label>
-            <input id="password" type="password" name="password" required />
+            <input
+              class="required"
+              data-error-required="Preencha o campo da senha"
+              id="password"
+              type="password"
+              name="password"
+            />
           </div>
           <div class="container-input">
             <label for="password">Confirmar senha</label>
-            <input id="password" type="password" name="password" required />
+            <input id="password-confirmation" type="password" name="password" />
           </div>
           <br />
           <input type="submit" value="Cadastrar" />
@@ -38,5 +48,58 @@
       </section>
     </main>
     <footer></footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section id="container-cadastro">
+        <h2>Cadastro</h2>
+        <form method="GET">
+          <div class="container-input">
+            <label for="name">Nome</label>
+            <input id="name" type="text" name="name" />
+          </div>
+          <div class="container-input">
+            <label for="email">E-mail</label>
+            <input
+              class="required"
+              data-error-required="Preencha o campo da senha"
+              id="email"
+              type="email"
+              name="email"
+            />
+          </div>
+
+          <div class="container-input">
+            <label for="password">Senha</label>
+            <input
+              class="required"
+              data-error-required="Preencha o campo da senha"
+              id="password"
+              type="password"
+              name="password"
+            />
+          </div>
+          <div class="container-input">
+            <label for="password">Confirmar senha</label>
+            <input id="password-confirmation" type="password" name="password" />
+          </div>
+          <br />
+          <input type="submit" value="Cadastrar" />
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
